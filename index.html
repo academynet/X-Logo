@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademyNet</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: #020303;
+            color: white;
+        }
+
+        body {
+            min-height: 100dvh;
+            display: grid;
+            place-content: center;
+        }
+
+        .container {
+            --size: 200px;
+            color: rgb(239, 243, 244);
+            position: relative;
+            width: var(--size);
+            height: var(--size);
+            container-type: size;
+        }
+
+        .container * {
+            position: absolute;
+            border-style: solid;
+        }
+
+        .border1 {
+            border-block-width: 6.2cqw;
+            border-inline-width: 6.9cqw;
+            top: 0;
+            left: calc(50% - 14.2cqw);
+            width: 28cqw;
+            transform: skew(35deg);
+            height: 100cqh;
+        }
+
+        .border2,
+        .border3 {
+            width: 0;
+            border-width: 4.2cqw;
+            height: 45cqh;
+            transform: skew(-41deg);
+            background-color: currentColor;
+        }
+
+        .border2 {
+            top: 0;
+            left: calc(50% + 18.4cqw);
+            border-bottom-left-radius: 15cqw;
+        }
+
+        .border3 {
+            left: calc(50% - 30.4cqw);
+            bottom: 0;
+            border-top-right-radius: 5cqw;
+        }
+
+        .small {
+            --szie: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="border1"></div>
+        <div class="border2"></div>
+        <div class="border3"></div>
+    </div>
+</body>
+
+</html>
